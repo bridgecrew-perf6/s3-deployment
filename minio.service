@@ -1,9 +1,11 @@
 [Unit]
 Description=Minio S3 Server (running on port 9000)
-WantedBy=multi-user.target
 
 [Service]
 Type=simple
 ExecStart=/usr/local/bin/minio/minio server /var/minio/data
 Restart=always
 EnvironmentFile=/etc/minio/minio.env
+
+[Install]
+WantedBy=multi-user.target
