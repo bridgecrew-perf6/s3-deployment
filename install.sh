@@ -25,7 +25,7 @@ systemctl enable minio
 # install nginx
 sudo apt install -y nginx
 
-cp ./nginx.conf /etc/nginx/sites-available/cdn.ros-cloud.apt
+cp ./nginx.conf /etc/nginx/sites-available/cdn.ros-cloud.at
 
 ln -s /etc/nginx/sites-available/cdn.ros-cloud.at /etc/nginx/sites-enabled/
 
